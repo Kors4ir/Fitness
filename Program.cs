@@ -1,0 +1,27 @@
+using System;
+
+namespace FitnessCenter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "Фитнес-Центр 'Сила и Грация' v1.0";
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("╔════════════════════════════════════════╗");
+            Console.WriteLine("║     ФИТНЕС-ЦЕНТР 'СИЛА И ГРАЦИЯ'      ║");
+            Console.WriteLine("║         Система управления             ║");
+            Console.WriteLine("╚════════════════════════════════════════╝");
+            Console.ResetColor();
+            Console.WriteLine();
+            
+            FitnessMenu menu = new FitnessMenu();
+            menu.ShowMainMenu();
+            
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n✅ Спасибо за тренировку! Будьте здоровы!");
+            Console.ResetColor();
+            Console.ReadKey();
+        }
+    }
+}
